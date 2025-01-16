@@ -21,6 +21,6 @@ def book_list_view(request):
         book_list = Book.objects.all()
         return render(request, "books/show.html", {"book_list": book_list})
 
-def book_detail_view(request, book_id):
-    book = Book.objects.get(id=book_id)
+def book_detail_view(request, id):
+    book = Book.objects.get(id=id)
     return render(request, "books/show_detail.html", {"book": book})

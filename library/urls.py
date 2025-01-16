@@ -7,8 +7,6 @@ urlpatterns = [
     path('about_my_pat/', views.about_my_pet, name='about_my_pet'),
     path('current_time', views.current_time, name='current_time'),
 
-
+    path('books/<int:id>/', views.book_detail_view, name='book_detail'),
     path('books/', views.book_list_view, name='book_list'),
-    path('books/<int:book_id>/', views.book_detail_view, name='book_detail'),
-
 ]
