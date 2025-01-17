@@ -1,0 +1,22 @@
+{% load static %}
+{% include 'components/header.html' %}
+<h1>Ваша корзина</h1>
+<table>
+    <tr>
+        <th>Товар</th>
+        <th>Цена</th>
+        <th>Количество</th>
+        <th>Итого</th>
+        <th>Удалить</th>
+    </tr>
+    {% for item in cart_items %}
+    <tr>
+        <td>{{ item.product_name }}</td>
+        <td>{{ item.price }}</td>
+        <td>{{ item.quantity }}</td>
+        <td>{{ item.total_price }}</td>
+        <td><a href="{% url 'remove_from_cart' item.id %}">Удалить</a></td>
+    </tr>
+    {% endfor %}
+</table>
+{% include 'components/footer.html' %}

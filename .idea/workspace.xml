@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2999c7f-97fd-494b-874f-f268aa490889" name="Changes" comment="" />
+    <list default="true" id="f2999c7f-97fd-494b-874f-f268aa490889" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/hashtags/templates/Cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hashtags/templates/hashtags/all_products.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hashtags/templates/hashtags/female_products.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hashtags/templates/hashtags/male_products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashtags/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/hashtags/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashtags/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/hashtags/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashtags/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/hashtags/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/books/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/books/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/books/show_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/books/show_detail.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -29,18 +41,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ASUS\Abdurahim1\GEEKSLibrary\templates\books" />
@@ -68,7 +81,8 @@
       <workItem from="1736755366643" duration="1944000" />
       <workItem from="1736757357474" duration="2686000" />
       <workItem from="1736760090497" duration="6708000" />
-      <workItem from="1736874755699" duration="14746000" />
+      <workItem from="1736874755699" duration="16859000" />
+      <workItem from="1737078867096" duration="3808000" />
     </task>
     <servers />
   </component>
