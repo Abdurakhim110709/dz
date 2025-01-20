@@ -7,3 +7,15 @@
     {% endfor %}
 </ul>
 {% include 'components/footer.html' %}
+<form method="GET" action="{% url 'all_products' %}">
+    <input type="text" name="query" placeholder="Search for products" value="{{ request.GET.query }}">
+    <button type="submit">Search</button>
+</form>
+
+<ul>
+    {% for product in products %}
+        <li>{{ product.product_name }}</li>
+    {% empty %}
+        <li>No products found</li>
+    {% endfor %}
+</ul>

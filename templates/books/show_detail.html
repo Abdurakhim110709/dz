@@ -1,35 +1,43 @@
 {% load static %}
 {% include 'components/header.html' %}
 
+<!-- Подключение CSS -->
 <link rel="stylesheet" href="{% static 'css/show.css' %}">
 
 <!-- Контент с информацией о книге -->
 <div class="container mt-4">
     <div class="movie-card">
         <div class="card">
+            <!-- Изображение книги -->
             <img src="{{ book.image.url }}" class="card-img-top" alt="{{ book.title }}">
+
             <div class="card-body">
                 <h5 class="card-title">{{ book.title }}</h5>
                 <p class="card-text">{{ book.description }}</p>
-                <p><strong>Цена :</strong> {{ book.price }}</p>
-                <p><strong>Дата выхода :</strong> {{ book.created_at }}</p>
-                <p><strong>Жанр :</strong> {{ book.genre }}</p>
-                <p><strong>Почта :</strong> {{ book.email }}</p>
-                <p><strong>Автор :</strong> {{ book.author }}</p>
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                <p><strong>Цена:</strong> {{ book.price }}</p>
+                <p><strong>Дата выхода:</strong> {{ book.created_at|date:"d.m.Y" }}</p>
+                <p><strong>Жанр:</strong> {{ book.genre }}</p>
+                <p><strong>Почта:</strong> {{ book.email }}</p>
+                <p><strong>Автор:</strong> {{ book.author }}</p>
+                <!-- Видео (обновите ссылку с ID видео) -->
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/{{ book.video_id }}" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </div>
-    {% for i in book.reviews.all %}
-    <!-- Блок для комментариев -->
-    <div class="comment-section">
-        <h5>Комментарии</h5>
 
+    <!-- Секция комментариев -->
+    {% if book.reviews.all %}
+    <div class="comment-section mt-4">
+        <h5>Комментарии</h5>
+        {% for review in book.reviews.all %}
         <div class="comment">
-            <p>{{ i.created_at }} : {{ i.comment }} <strong>Оценка: {{ i.stars }}</strong></p>
+            <p>{{ review.created_at|date:"d.m.Y H:i" }}: {{ review.comment }} <strong>Оценка: {{ review.stars }}</strong></p>
         </div>
+        {% endfor %}
     </div>
-    {% endfor %}
+    {% else %}
+        <p>Комментариев пока нет.</p>
+    {% endif %}
 </div>
 
 <!-- Футер -->

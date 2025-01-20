@@ -1,26 +1,33 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-import datetime
+from django.views import View
+from django.views.generic import ListView, DetailView
 from .models import Book
-
-# Create your views here.
-
-def about_me(request):
-    return HttpResponse("my name is Abdurahim")
-
-def about_my_pet(request):
-    return render(request, "about_my_pet.html")
+import datetime
 
 
-def current_time(request):
-    return HttpResponse(datetime.datetime.now())
+class AboutMeView(View):
+    def get(self, request):
+        return HttpResponse("my name is Abdurahim")
 
 
-def book_list_view(request):
-    if request.method == "GET":
-        book_list = Book.objects.all()
-        return render(request, "books/show.html", {"book_list": book_list})
+class AboutMyPetView(View):
+    def get(self, request):
+        return render(request, "about_my_pet.html")
 
-def book_detail_view(request, id):
-    book = Book.objects.get(id=id)
-    return render(request, "books/show_detail.html", {"book": book})
+
+class CurrentTimeView(View):
+    def get(self, request):
+        return HttpResponse(datetime.datetime.now())
+
+
+class BookListView(ListView):
+    model = Book
+    template_name = "books/show.html"
+    context_object_name = "book_list"
+
+
+class BookDetailView(DetailView):
+    model = Book
+    template_name = "books/show_detail.html"
+    context_object_name = "book"
