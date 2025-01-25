@@ -1,0 +1,41 @@
+{% load static %}
+{% include 'components/header.html' %}
+
+<link rel="stylesheet" href="{% static 'css/book.css' %}">
+
+<!-- Контент с карточками -->
+<div class="container mt-4 content">
+    <div class="row justify-content-center">
+        {% for book in books %}
+        <div class="col-md-4 mb-4">
+            <div class="card" style="width: 100%;">
+                {% if book.image %}
+                    <img src="{{ book.image.url }}" class="card-img-top" alt="{{ book.title }}" style="max-width: 300px; height: auto;">
+                {% else %}
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Нет изображения">
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ book.title }}</h5>
+                    <p class="card-text">{{ book.created_at }}</p>
+                    <a href="{% url 'book_detail' book.id %}" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% include 'components/footer.html' %}
+
+<h1>Books List</h1>
+<ul>
+    {% for book in books %}
+        <li>
+            <h2>{{ book.title }}</h2>
+            <p>{{ book.description }}</p>
+            <p>Author: {{ book.author }}</p>
+            <img src="{{ book.image.url }}" alt="{{ book.title }}">
+            <p>Price: {{ book.price }}</p>
+        </li>
+    {% endfor %}
+</ul>

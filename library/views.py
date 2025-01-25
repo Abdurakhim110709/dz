@@ -23,11 +23,16 @@ class CurrentTimeView(View):
 
 class BookListView(ListView):
     model = Book
-    template_name = "books/show.html"
-    context_object_name = "book_list"
+    template_name = "books/book.html"
+    context_object_name = "book"
 
 
 class BookDetailView(DetailView):
     model = Book
-    template_name = "books/show_detail.html"
+    template_name = "books/book_detail.html"
     context_object_name = "book"
+
+
+def book_list(request):
+    books = Book.objects.all()
+    return render(request, 'books/book.html', {'books': books})
