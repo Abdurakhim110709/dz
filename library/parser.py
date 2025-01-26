@@ -1,7 +1,6 @@
 import requests
 from .models import Book
-from django.core.files.images import ImageFile
-from io import BytesIO
+
 
 
 def parse_books():
@@ -30,5 +29,5 @@ def parse_books():
                 author=author,
                 description=description,
                 price=price,
-                image=image_url if image_url else None,  # Если изображения нет, оставляем поле пустым
+                image=image_url if image_url else None,
             )
