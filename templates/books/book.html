@@ -10,9 +10,9 @@
         <div class="col-md-4 mb-4">
             <div class="card" style="width: 100%;">
                 {% if book.image %}
-                    <img src="{{ book.image.url }}" class="card-img-top" alt="{{ book.title }}" style="max-width: 300px; height: auto;">
+                <img src="{{ book.image }}" class="card-img-top" alt="{{ book.title }}" style="max-width: 300px; height: auto;">
                 {% else %}
-                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Нет изображения">
+                <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Нет изображения">
                 {% endif %}
                 <div class="card-body">
                     <h5 class="card-title">{{ book.title }}</h5>

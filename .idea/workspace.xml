@@ -5,15 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2999c7f-97fd-494b-874f-f268aa490889" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/css/hastags.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/books/book.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/books/book_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/GoodRead_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/GoodRead_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser_Goodread/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser_Goodread/parser_GoodRead.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser_Goodread/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/salary/middleware.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/salary/signals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/salary/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/show.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/book.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/show_detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/book_detail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/books/show.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/books/show_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GEEKS_Library/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/GEEKS_Library/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GEEKS_Library/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/GEEKS_Library/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/books/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/books/book.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +28,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -90,6 +95,7 @@
       <workItem from="1737628434735" duration="2138000" />
       <workItem from="1737634469081" duration="11000" />
       <workItem from="1737634535400" duration="67000" />
+      <workItem from="1737962137778" duration="5584000" />
     </task>
     <servers />
   </component>

@@ -7,6 +7,5 @@ urlpatterns = [
     path('current-time/', CurrentTimeView.as_view(), name='current_time'),
     path('books/', BookListView.as_view(), name='book_list'),
     path('books/<int:pk>/', BookDetailView.as_view(), name='book_detail'),
-    path('pars_book/', book_list, name='pars_book'),
 ]
 

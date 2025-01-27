@@ -18,9 +18,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'library',
     'hashtags',
+    'parser_Goodread',
+    'salary'
 ]
 
 MIDDLEWARE = [
+    'salary.middleware.SalaryMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
